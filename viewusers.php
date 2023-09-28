@@ -1,6 +1,8 @@
 <?php
- 
- require_once "database/Dbconn.php";
+require_once "classlib.php";
+
+$dbConnection = new DbConnection();
+$pdo = $dbConnection->getPdo();
 
 ?>
 <!DOCTYPE html>

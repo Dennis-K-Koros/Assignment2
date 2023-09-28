@@ -1,5 +1,8 @@
 <?php
-require_once "../database/Dbconn.php";
+require_once "../classlib.php";
+
+$dbConnection = new DbConnection();
+$pdo = $dbConnection->getPdo();
 
 session_start();
 unset($_SESSION["data"]);
