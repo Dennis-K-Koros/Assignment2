@@ -1,9 +1,9 @@
 <?php
 class DbConnection {
     private $host = 'localhost';
-    private $db = 'conch';
-    private $user = 'root';
-    private $pass = '';
+    private $db = 'CAT1';
+    private $user = 'sangutet';
+    private $pass = 'Osti!Sangutet@123';
     private $charset = 'utf8';
     private $pdo;
 
