@@ -1,4 +1,7 @@
 <?php
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 require_once "../classlib.php";
 
@@ -32,10 +35,10 @@ if(isset($_POST["register"])){
       }  
       $stmt = null;
 
-   }catch(PDOException $e){
-      echo $sql . "<br>" . $e->getMessage();
-
+   }catch(PDOException $e) {
+      echo "Error: " . $e->getMessage(); // Show detailed error message
    }
+   
    
 }
 ?>
