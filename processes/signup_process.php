@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-ini_set('display_startup_errors', 1);
-error_reporting(E_ALL);
 
 require_once "../classlib.php";
 
@@ -28,7 +25,7 @@ if(isset($_POST["register"])){
    $encrpt_pass= password_hash($confPass,PASSWORD_DEFAULT);
 
    try{
-      $stmt = $pdo->prepare('INSERT INTO users(Firstname, Lastname, email, password) VALUES(?,?,?,?)');
+      $stmt = $pdo->prepare('INSERT INTO users(firstname, lastname, email, password) VALUES(?,?,?,?)');
 
       if($stmt->execute([$firstName,$LastName , $email, $encrpt_pass])){
       header("Location: ../signin.php");
