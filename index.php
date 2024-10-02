@@ -38,7 +38,7 @@
                       if(isset($_SESSION["data"])){
                         ?>
                             <?php print "Welcome " . $_SESSION["data"]
-                            ["Firstname"]; ?> 
+                            ["firstName"]; ?> 
                             <?php
                         }
                     ?>        

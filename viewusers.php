@@ -40,7 +40,7 @@ $pdo = $dbConnection->getPdo();
                       if(isset($_SESSION["data"])){
                         ?>
                             <?php print "Welcome " . $_SESSION["data"]
-                            ["Firstname"]; ?> 
+                            ["firstname"]; ?> 
                             <?php
                         }
                     ?>        
@@ -89,8 +89,8 @@ $pdo = $dbConnection->getPdo();
             ?>        
             <tr>
                 <td><?php print $idNo; $idNo++;?></td>
-                <td><?php print $user["Firstname"];?></td>       
-                <td><?php print $user["Lastname"];?></td>       
+                <td><?php print $user["firstName"];?></td>       
+                <td><?php print $user["lastName"];?></td>       
                 <td><?php print $user["email"];?></td>       
                 <td><?php print $user["datecreated"];?></td>       
                 <td><?php print $user["dateupdated"];?></td> 
